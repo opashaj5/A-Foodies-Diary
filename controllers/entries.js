@@ -15,4 +15,9 @@ router.get('/', (req, res) => {
     })
 })
 
+// New
+router.get('/new', (req, res) => {
+    res.render('entries/New')
+})
+
 module.exports = router;
