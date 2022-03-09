@@ -1,2 +1,2 @@
-DATABASE_URL=mongodb+srv://opashaj:tz3uNlKeVOy8RkxP@cluster0.qkoht.mongodb.net/afoodiesdiary?retryWrites=true&w=majority
-PORT=3000
+/node_modules
+.env
