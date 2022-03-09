@@ -20,4 +20,16 @@ router.get('/new', (req, res) => {
     res.render('entries/New')
 })
 
+// Create
+router.post('/', (req, res) => {
+    Entry.create(req.body, (err, createdEntry) => {
+        if (err) {
+            res.status(403).send(err)
+        } else {
+            console.log(createdEntry)
+            res.redirect('/entries')
+        }
+    })
+});
+
 module.exports = router;
