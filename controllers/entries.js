@@ -32,4 +32,17 @@ router.post('/', (req, res) => {
     })
 });
 
+// Show
+router.get('/:id', (req, res) => {
+    const {id} = req.params;
+    
+        Entry.findById(id)
+            .then((entry) => {
+                res.render('entries/Show', { entry })   
+            })
+            .catch((error)=> {
+                res.status(400).json({ error })
+            })
+})
+
 module.exports = router;
