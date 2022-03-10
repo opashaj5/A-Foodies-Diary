@@ -3,7 +3,7 @@ require('dotenv').config(); // Loads Env vars into process.env
 const express = require('express'); 
 const morgan = require('morgan');
 const methodOverride = require('method-override');
-const entryController = require('./controllers/entries')
+const postController = require('./controllers/posts')
 const path = require('path');
 
 // App Object Setup 
@@ -18,11 +18,11 @@ app.use(methodOverride("_method"));
 app.use(express.static("public"));
 
 // Routes
-app.use('/entries', entryController)
+app.use('/posts', postController)
 app.get('/', (req, res) => {
-    res.send("Server is running");
+    res.send(" Your server is running you better go catch it");
 })
 
 // Server Listener
 const PORT = process.env.PORT;
-app.listen(PORT, () => console.log(`Listening on ${PORT}`))
+app.listen(PORT, () => console.log(`Now listening on ${PORT}`))
