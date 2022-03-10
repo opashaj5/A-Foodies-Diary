@@ -39,6 +39,18 @@ router.get('/new', (req, res) => {
     res.render('posts/New')
 })
 
+// Delete
+router.delete('/:id', (req, res) => {
+    const { id } = req.params;
+    Post.findByIdAndDelete(id)
+        .then(() => {
+            res.redirect('/posts');
+        })
+        .catch((error) => {
+            res.status(400).json({ error });
+        })
+})
+
 // Create
 router.post('/', (req, res) => {
     Post.create(req.body)
