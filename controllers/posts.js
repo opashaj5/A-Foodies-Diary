@@ -6,11 +6,11 @@ const router = express.Router();
 
 router.get('/seed', (req, res) => {
     const startPosts = [
-        { name: "Orange", color: "orange" },
-        { name: "Grape", color: "purple" },
-        { name: "Banana", color: "orange" },
-        { name: "Strawberry", color: "red" },
-        { name: "Coconut", color: "brown" },
+        { title: "Orange", entry: "orange" },
+        { title: "Grape", entry: "purple" },
+        { title: "Banana", entry: "orange" },
+        { title: "Strawberry", entry: "red" },
+        { title: "Coconut", entry: "brown" },
     ]
 
      // Delete all fruits

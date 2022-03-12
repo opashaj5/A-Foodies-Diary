@@ -9,7 +9,7 @@ class DefaultLayout extends React.Component {
                     <meta charset="UTF-8" />
                     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <title>A Foodies Diary</title>
+                    <title>Peas in a Pod Blog</title>
                     {/* Milligram CSS for Some Default Styling */}
                     {/* Google Fonts */}
                     <link
@@ -35,7 +35,7 @@ class DefaultLayout extends React.Component {
                 </head>
                 <body>
                     <header>
-                        <h1>A Foodies Diary</h1>
+                        <h1>Peas in a Pod</h1>
                     </header>
                     <main>
                         {this.props.children}

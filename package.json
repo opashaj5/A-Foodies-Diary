@@ -1,5 +1,5 @@
 {
-  "name": "afoodiesdiary",
+  "name": "peas_in_a_pod",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,16 +11,24 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
     "bootstrap": "^3.4.1",
+    "concurrently": "^7.0.0",
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
     "express-react-views": "^0.11.0",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
     "method-override": "^3.0.0",
-    "mongoose": "^6.2.4",
+    "mongoose": "^6.2.6",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "validator": "^13.7.0"
   }
 }

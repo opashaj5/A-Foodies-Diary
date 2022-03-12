@@ -1,12 +1,8 @@
-/////////////////////////////////////////////
 // Import Our Dependencies
-/////////////////////////////////////////////
 require("dotenv").config(); // Load ENV Variables
 const mongoose = require("mongoose");
 
-/////////////////////////////////////////////
-// Database Connection
-/////////////////////////////////////////////
+// Database Connection //
 // Setup inputs for our connect function
 const DATABASE_URL = process.env.DATABASE_URL;
 const CONFIG = {
@@ -23,8 +19,6 @@ mongoose.connection
   .on("close", () => console.log("Disconnected from Mongoose"))
   .on("error", (error) => console.log(error));
 
-////////////////////////////////////////////////////
-// Export the Connection
-////////////////////////////////////////////////////
 
+// Export the Connection
 module.exports = mongoose;

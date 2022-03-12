@@ -9,7 +9,7 @@ class Show extends React.Component {
             <div>
               <article>
                 <h2>
-                  {post.name}
+                  {post.title}
                 </h2>
                 <a href={`/posts/${ post._id }/edit`}><button>Edit</button></a>
                 <form action={`/posts/${ post._id }?_method=DELETE`} method="POST">

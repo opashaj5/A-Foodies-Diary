@@ -13,7 +13,7 @@ class Index extends React.Component {
                             <article>
                                 <a href={`/posts/${post._id}`}>
                                     <h2>
-                                        {post.name}
+                                        {post.title}
                                     </h2>
                                 </a>
                             </article>
