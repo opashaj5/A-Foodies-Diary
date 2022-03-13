@@ -4,6 +4,7 @@ const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
 const postController = require('./controllers/posts')
+const userController = require('./controllers/users')
 const path = require('path');
 
 // App Object Setup 
@@ -19,6 +20,7 @@ app.use(express.static("public"));
 
 // Routes
 app.use('/posts', postController)
+app.use('/posts', userController)
 app.get('/', (req, res) => {
     res.send(" Your server is running you better go catch it");
 })

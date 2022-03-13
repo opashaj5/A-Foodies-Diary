@@ -6,18 +6,18 @@ class New extends React.Component {
         return(
             <DefaultLayout>
                 <div>
+                    <h1>Create a New Post</h1>
                     <nav>
                         <a href="/posts">Back</a>
                     </nav>
                     <form action="/posts" method="POST">
-                        Title: <input name="title" type="text" /><br/>
-                        Date: <input name="date" type="date"></input><br/>
+                        Recipe Name: <input name="name" type="text"/><br/>
+                        Image URL: <input name="img"  type="url"/><br/>
                         Entry: <input name="entry"  type="textarea"/><br/>
-                        <input type="submit" value="Create New Post" />
+                        <input type="submit" value="Submit"/>
                     </form>
                 </div>
             </DefaultLayout>
-        
         )
     }
 };

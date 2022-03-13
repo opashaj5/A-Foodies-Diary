@@ -30,8 +30,8 @@ class DefaultLayout extends React.Component {
                     crossOrigin="anonymous">
                     </script>
                     {/* OUR CSS AND JS */}
-                    <link rel="stylesheet" href="/styles.css"/>
-                    <script src="/app.js" defer></script>
+                    <link rel="stylesheet" href="/style.css"/>
+                    <script src="/server.js" defer></script>
                 </head>
                 <body>
                     <header>
