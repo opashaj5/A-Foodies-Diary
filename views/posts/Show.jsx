@@ -11,6 +11,7 @@ class Show extends React.Component {
                 <h2>
                   {post.title}
                 </h2>
+                <p>{post.entry}</p>
                 <a href={`/posts/${ post._id }/edit`}><button>Edit</button></a>
                 <form action={`/posts/${ post._id }?_method=DELETE`} method="POST">
                   <input type="submit" value="Delete" />

@@ -29,20 +29,43 @@ class DefaultLayout extends React.Component {
                     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
                     crossOrigin="anonymous">
                     </script>
-                    {/* OUR CSS AND JS */}
-                    <link rel="stylesheet" href="/style.css"/>
+                    {/* Font Awesome */}
+                    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+                    {/* Github Button */}
+                    <script async defer src="https://buttons.github.io/buttons.js"></script>
+                    {/* Our CSS, Bootstrap and JS */}
+                    <link rel="stylesheet" href="style.css" charset="utf-8"/>
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+                    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+                    crossorigin="anonymous"/>
                     <script src="/server.js" defer></script>
                 </head>
                 <body>
-                    <header>
-                        <h1>Peas in a Pod</h1>
-                    </header>
-                    <main>
-                        {this.props.children}
-                    </main>
-                    <footer>
-
-                    </footer>
+                <nav>
+                    <ul class="nav nav-pills nav-justified" role="tablist">
+                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
+                    </ul>
+                </nav>
+                <header class="header text-center">
+                    <img class="img-fluid" src="../public/img/header.png"/>
+                </header>
+                <main>
+                    {this.props.children}
+                </main>
+                <footer class="footer text-center" id="contact">
+                    <div class="content">
+                        <h1 class="footer-style" style={{fontSize: "100%", fontWeight: "300"}}>Created By Ornela Pashaj</h1>
+                            <div class="column">
+                            <span style={{fontSize: "150%"}}>
+                                <a class="footer-style" href="https://github.com/opashaj5" target="_blank"><i class="fab fa-github-square"></i></a>
+                                <a class="footer-style" href="https://www.linkedin.com/in/ornelapashaj/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </span>
+                            </div>
+                    </div>
+                </footer>
                 </body>
             </html>
         )

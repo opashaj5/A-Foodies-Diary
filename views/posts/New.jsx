@@ -11,9 +11,9 @@ class New extends React.Component {
                         <a href="/posts">Back</a>
                     </nav>
                     <form action="/posts" method="POST">
-                        Recipe Name: <input name="name" type="text"/><br/>
+                        Recipe Name: <input name="title" type="text"/><br/>
                         Image URL: <input name="img"  type="url"/><br/>
-                        Entry: <input name="entry"  type="textarea"/><br/>
+                        Entry: <textarea name="entry"/><br/>
                         <input type="submit" value="Submit"/>
                     </form>
                 </div>
