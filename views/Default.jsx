@@ -9,7 +9,7 @@ class DefaultLayout extends React.Component {
                     <meta charset="UTF-8" />
                     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <title>Peas in a Pod Blog</title>
+                    <title>Peas in a Pod</title>
                     {/* Milligram CSS for Some Default Styling */}
                     {/* Google Fonts */}
                     <link
