@@ -1,0 +1,26 @@
+body {
+    background-color: #F8F0E3;
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.nav-link:active {
+    transform: scale(0.98);
+}
+
+.footer {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    padding: 13rem 1.5rem 0rem;
+}
+  
+.footer-style {
+    color:black;
+}
