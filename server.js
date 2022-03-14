@@ -20,10 +20,9 @@ app.use(express.static("public"));
 
 // Routes
 app.use('/posts', postController)
-app.use('/posts', userController)
-app.get("/", (req, res) => {
-    res.render("posts/Home", { session: req.session })
-});
+app.get('/', (req, res) => {
+    res.send("Server is running");
+})
 
 // Server Listener
 const PORT = process.env.PORT;
