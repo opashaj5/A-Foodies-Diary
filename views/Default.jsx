@@ -34,7 +34,7 @@ class DefaultLayout extends React.Component {
                     {/* Github Button */}
                     <script async defer src="https://buttons.github.io/buttons.js"></script>
                     {/* Our CSS, Bootstrap and JS */}
-                    <link rel="stylesheet" href="css/style.css" />
+                    <link rel="stylesheet" href="/css/style.css" />
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
                         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
                         crossorigin="anonymous" />
@@ -55,15 +55,13 @@ class DefaultLayout extends React.Component {
                     <main>
                         {this.props.children}
                     </main>
-                    <footer class="footer text-center" id="contact">
+                    <footer class="footer text-center">
                         <div class="content">
-                            <p class="footer-style">Created By Ornela Pashaj</p>
-                            <div class="column">
-                                <span style={{ fontSize: "150%" }}>
-                                    <a class="footer-style" href="https://github.com/opashaj5" target="_blank"><i class="fab fa-github-square"></i></a>
-                                    <a class="footer-style" href="https://www.linkedin.com/in/ornelapashaj/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                </span>
-                            </div>
+                            <p class="footer">Created By Ornela Pashaj</p>
+                            <span style={{ fontSize: "150%" }}>
+                                <a class="footer-btn" href="https://github.com/opashaj5" target="_blank"><i class="fab fa-github-square"></i></a>
+                                <a class="footer-btn" href="https://www.linkedin.com/in/ornelapashaj/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </span>
                         </div>
                     </footer>
                 </body>

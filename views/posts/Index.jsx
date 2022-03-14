@@ -6,11 +6,12 @@ class Index extends React.Component {
         const { posts } = this.props;
         return (
             <DefaultLayout>
-                <div className='anchor-wrapper'>
-                    <a href="/posts/new"><button>Create A New Post</button></a>
+                <h1 class="header text-center">Welcome!</h1><br></br>
+                <div className="anchor-wrapper">
+                    <a href="/posts/new"><button id="create-btn">Create A New Post</button></a>
                 </div>
-                <div className='container'>
-                    <div className='card-wrapper'>
+                <div className="container">
+                    <div className="card-wrapper">
                         {
                             posts.map((post) => (
                                 <div className="card" style={{ width: 18 + "rem" }}>
@@ -18,7 +19,7 @@ class Index extends React.Component {
                                     <div className="card-body">
                                         <h5 className="card-title">{post.title}</h5>
                                         <p className="card-text">{post.entry}</p>
-                                        <a href={`/posts/${post._id}`} className="btn btn-primary">Recipe</a>
+                                        <a href={`/posts/${post._id}`} className="btn btn-info">View Full Recipe</a>
                                     </div>
                                 </div>
                             ))
