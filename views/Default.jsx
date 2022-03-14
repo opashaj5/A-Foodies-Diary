@@ -34,19 +34,19 @@ class DefaultLayout extends React.Component {
                     {/* Github Button */}
                     <script async defer src="https://buttons.github.io/buttons.js"></script>
                     {/* Our CSS, Bootstrap and JS */}
-                    <link rel="stylesheet" href="/css/style.css" />
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
                         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
                         crossorigin="anonymous" />
+                    <link rel="stylesheet" href="/css/style.css" />
                     <script src="/server.js" defer></script>
                 </head>
                 <body>
                     <nav>
                         <ul class="nav nav-pills nav-justified" role="tablist">
-                            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/posts">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/login">LOGIN</a></li>
                         </ul>
                     </nav>
                     <header class="header text-center">

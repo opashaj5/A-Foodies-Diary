@@ -9,7 +9,7 @@ class Show extends React.Component {
         <div className="show-page">
           <h2>Recipe:</h2>
           <article>
-            <div className="show-card" style={{ width: 100 + "rem" }}>
+            <div className="show-card">
               <img className="card-img-top" src={post.img} alt="card image cap" />
               <div className="card-body">
                 <h5 className="card-title">{post.title}</h5>
@@ -17,7 +17,7 @@ class Show extends React.Component {
               </div>
             </div>
           </article><br></br>
-          <a href={`/posts/${post._id}/edit`}><button>Edit Post</button></a><br></br>
+          <a href={`/posts/${post._id}/edit`}><button id="btn">Edit Post</button></a><br></br>
           <a href="/posts"><button>Back To Main Page</button></a>
         </div>
       </DefaultLayout>

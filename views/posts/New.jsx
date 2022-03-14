@@ -8,10 +8,10 @@ class New extends React.Component {
                 <div className="new-post">
                     <h2>Create a New Post</h2>
                     <form action="/posts" method="POST">
-                        Recipe Name: <input name="title" type="text" /><br />
-                        Image URL: <input name="img" type="url" /><br />
-                        Entry: <textarea name="entry" /><br />
-                        <input id="submit-btn" type="submit" value="Submit" />
+                        Recipe Name: <input className="input-style" name="title" type="text" /><br />
+                        Image URL: <input className="input-style" name="img" type="url" /><br />
+                        Entry: <textarea className="entry-style" name="entry" /><br />
+                        <input id="btn" type="submit" value="Submit" />
                     </form>
                     <a href="/posts"><button>Back To Main Page</button></a>
                 </div>
