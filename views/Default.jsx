@@ -50,7 +50,7 @@ class DefaultLayout extends React.Component {
                         </ul>
                     </nav>
                     <header class="header text-center">
-                        <img class="img-fluid" src="https://i.imgur.com/rLdcuhH.png" />
+                        <img class="img-fluid" src="https://i.imgur.com/GuiSbvm.png" />
                     </header>
                     <main>
                         {this.props.children}

@@ -1,6 +1,6 @@
 // Import Our Dependencies
 require('dotenv').config(); // Loads Env vars into process.env
-const express = require('express'); 
+const express = require('express');
 const morgan = require('morgan');
 const methodOverride = require('method-override');
 const postController = require('./controllers/posts')
@@ -14,16 +14,16 @@ app.set('view engine', 'jsx');
 
 // Middleware
 app.use(morgan("tiny")); // logging
-app.use(express.urlencoded({extended: true}));
+app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(express.static("public"));
 
 // Routes
 app.use('/posts', postController)
 app.use('/posts', userController)
-app.get('/', (req, res) => {
-    res.send("Server is runnning");
-})
+app.get("/", (req, res) => {
+    res.render("posts/Home", { session: req.session })
+});
 
 // Server Listener
 const PORT = process.env.PORT;
