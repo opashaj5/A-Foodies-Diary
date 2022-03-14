@@ -17,6 +17,7 @@ class Show extends React.Component {
                   <input type="submit" value="Delete" />
                 </form>
                 <a href="/posts/"><button>Back to Main</button></a>
+                <img src={post.img} alt=""/>
               </article>
             </div>
           </DefaultLayout>

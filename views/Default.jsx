@@ -1,7 +1,7 @@
 const React = require('react');
 
 class DefaultLayout extends React.Component {
-    render(){
+    render() {
         const { posts } = this.props;
         return (
             <html lang="en">
@@ -14,58 +14,58 @@ class DefaultLayout extends React.Component {
                     {/* Google Fonts */}
                     <link
                         rel="stylesheet"
-                        href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"/>
+                        href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
                     {/* CSS Reset */}
                     <link
                         rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+                        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
                     {/* Milligram CSS */}
                     <link
                         rel="stylesheet"
-                        href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"/>
+                        href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" />
                     {/* Jquery */}
                     <script
-                    src="https://code.jquery.com/jquery-3.6.0.min.js"
-                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-                    crossOrigin="anonymous">
+                        src="https://code.jquery.com/jquery-3.6.0.min.js"
+                        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                        crossOrigin="anonymous">
                     </script>
                     {/* Font Awesome */}
                     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
                     {/* Github Button */}
                     <script async defer src="https://buttons.github.io/buttons.js"></script>
                     {/* Our CSS, Bootstrap and JS */}
-                    <link rel="stylesheet" href="style.css" charset="utf-8"/>
+                    <link rel="stylesheet" href="/css/style.css" />
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-                    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
-                    crossorigin="anonymous"/>
+                        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+                        crossorigin="anonymous" />
                     <script src="/server.js" defer></script>
                 </head>
                 <body>
-                <nav>
-                    <ul class="nav nav-pills nav-justified" role="tablist">
-                    <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
-                    </ul>
-                </nav>
-                <header class="header text-center">
-                    <img class="img-fluid" src="../public/img/header.png"/>
-                </header>
-                <main>
-                    {this.props.children}
-                </main>
-                <footer class="footer text-center" id="contact">
-                    <div class="content">
-                        <h1 class="footer-style" style={{fontSize: "100%", fontWeight: "300"}}>Created By Ornela Pashaj</h1>
+                    <nav>
+                        <ul class="nav nav-pills nav-justified" role="tablist">
+                            <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">LOGIN</a></li>
+                        </ul>
+                    </nav>
+                    <header class="header text-center">
+                        <img class="img-fluid" src="https://i.imgur.com/rLdcuhH.png" />
+                    </header>
+                    <main>
+                        {this.props.children}
+                    </main>
+                    <footer class="footer text-center" id="contact">
+                        <div class="content">
+                            <p class="footer-style">Created By Ornela Pashaj</p>
                             <div class="column">
-                            <span style={{fontSize: "150%"}}>
-                                <a class="footer-style" href="https://github.com/opashaj5" target="_blank"><i class="fab fa-github-square"></i></a>
-                                <a class="footer-style" href="https://www.linkedin.com/in/ornelapashaj/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            </span>
+                                <span style={{ fontSize: "150%" }}>
+                                    <a class="footer-style" href="https://github.com/opashaj5" target="_blank"><i class="fab fa-github-square"></i></a>
+                                    <a class="footer-style" href="https://www.linkedin.com/in/ornelapashaj/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </span>
                             </div>
-                    </div>
-                </footer>
+                        </div>
+                    </footer>
                 </body>
             </html>
         )

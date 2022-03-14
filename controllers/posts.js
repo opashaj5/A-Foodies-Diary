@@ -4,34 +4,15 @@ const Post = require("../models/post");
 // Create Router
 const router = express.Router();
 
-router.get('/seed', (req, res) => {
-    const startPosts = [
-        { title: "Orange", entry: "orange" },
-        { title: "Grape", entry: "purple" },
-        { title: "Banana", entry: "orange" },
-        { title: "Strawberry", entry: "red" },
-        { title: "Coconut", entry: "brown" },
-    ]
-
-     // Delete all fruits
-     Post.deleteMany({}).then((data) => {
-        Post.create(startPosts).then((data) => {
-            res.json(data);
-        })
-    }).catch((err) => {
-        res.status(400).send(err)
-    })
-})
-
 // Index
 router.get('/', (req, res) => {
     Post.find({})
-    .then((posts) => {
-        res.render("posts/Index", { posts })
-    })
-    .catch((error) => {
-        res.status(400).json({ error })
-    })
+        .then((posts) => {
+            res.render("posts/Index", { posts })
+        })
+        .catch((error) => {
+            res.status(400).json({ error })
+        })
 })
 
 // New
@@ -53,14 +34,14 @@ router.delete('/:id', (req, res) => {
 
 // Update
 router.put('/:id', (req, res) => {
-    const {id} = req.params;
+    const { id } = req.params;
 
     Post.findByIdAndUpdate(id, req.body)
         .then(() => {
             res.redirect(`/posts/${id}`)
         })
         .catch((error) => {
-            res.status(400).json({error})
+            res.status(400).json({ error })
         })
 })
 
@@ -77,27 +58,27 @@ router.post('/', (req, res) => {
 
 // Edit
 router.get('/:id/edit', (req, res) => {
-    const {id} = req.params
+    const { id } = req.params
     Post.findById(id)
         .then((post) => {
             res.render('posts/Edit', { post })
         })
         .catch((error) => {
-            res.status(400).json({error})
+            res.status(400).json({ error })
         })
 })
 
 // Show
 router.get('/:id', (req, res) => {
-    const {id} = req.params;
-    
-        Post.findById(id)
-            .then((post) => {
-                res.render('posts/Show', { post })   
-            })
-            .catch((error)=> {
-                res.status(400).json({ error })
-            })
+    const { id } = req.params;
+
+    Post.findById(id)
+        .then((post) => {
+            res.render('posts/Show', { post })
+        })
+        .catch((error) => {
+            res.status(400).json({ error })
+        })
 })
 
 module.exports = router;

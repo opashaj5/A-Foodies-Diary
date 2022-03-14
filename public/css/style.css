@@ -1,13 +1,14 @@
 body {
-    background-color: #F8F0E3;
+    background-color: #F8F0E3 !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
     text-align: center;
 }
 
-.nav-link {
+a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    color: black !important;
+    font-size: 20px;
 }
 
 .nav-link:hover {
@@ -22,9 +23,60 @@ body {
 .footer {
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding-top: 40rem;
+    height: 10%;
 }
   
 .footer-style {
     color:black;
+}
+
+.card-text {
+    text-overflow: ellipsis;
+    height: 200px;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.card-wrapper {
+    justify-content: space-around;
+    display: flex;
+    width: 100% !important;
+    height: 100%;
+    flex-wrap: wrap;
+    /* border: 10px solid blue; */
+    align-items: center;
+}
+
+.card {
+    min-width: 280px !important;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* border: 10px solid black; */
+    width: 100vw;
+}
+
+.anchor-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+main {
+    min-height: 90vh;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 250px !important;
+}
+
+.new-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }

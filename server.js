@@ -22,9 +22,9 @@ app.use(express.static("public"));
 app.use('/posts', postController)
 app.use('/posts', userController)
 app.get('/', (req, res) => {
-    res.send(" Your server is running you better go catch it");
+    res.send("Server is runnning");
 })
 
 // Server Listener
 const PORT = process.env.PORT;
-app.listen(PORT, () => console.log(`Now listening on ${PORT}`))
+app.listen(PORT, () => console.log(`Listening on ${PORT}`))
