@@ -21,6 +21,8 @@ Node.js | Express | React | MongoDB | Mongoose | JavaScript | CSS | HTML
 
 ## Link to Heroku
 
+https://ornelapeas.herokuapp.com/
+
 ## Next Steps
 
 I would like to add the login, likes/comments features that I did not get to during my time on this project. 
