@@ -6,7 +6,7 @@ class About extends React.Component {
         return (
             <DefaultLayout>
                 <div className="about-page">
-                    <h2>The Chef</h2>
+                    <h2>The Creator</h2>
                     <article>
                         <div className="about-card">
                             <img className="card-img-top" src={img} alt="card image cap" />
