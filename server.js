@@ -20,6 +20,7 @@ app.use(express.static("public"));
 
 // Routes
 app.use('/posts', postController)
+app.use('/users', userController)
 app.get('/', (req, res) => {
     res.send("Server is running");
 })
