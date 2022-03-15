@@ -19,9 +19,7 @@ Node.js | Express | React | MongoDB | Mongoose | JavaScript | CSS | HTML
 
 <img src="https://i.imgur.com/xCwZhgn.png">
 
-## Link to Heroku and Trello
-
-https://trello.com/b/jraGHIh7/peas-in-a-pod
+## Link to Heroku
 
 ## Next Steps
 
@@ -30,3 +28,7 @@ I would like to add the login, likes/comments features that I did not get to dur
 ## Wireframe
 
 <img src="https://i.imgur.com/8PPkS5X.png"> <img src="https://i.imgur.com/7mB9yGn.png">
+
+## Trello Board
+
+https://trello.com/b/jraGHIh7/peas-in-a-pod
