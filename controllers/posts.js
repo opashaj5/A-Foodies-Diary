@@ -25,7 +25,7 @@ router.delete('/:id', (req, res) => {
     const { id } = req.params;
     Post.findByIdAndDelete(id)
         .then(() => {
-            res.redirect('/posts');
+            res.redirect('/users/home');
         })
         .catch((error) => {
             res.status(400).json({ error });
@@ -38,7 +38,7 @@ router.put('/:id', (req, res) => {
 
     Post.findByIdAndUpdate(id, req.body)
         .then(() => {
-            res.redirect(`/posts/${id}`)
+            res.redirect(`/${id}`)
         })
         .catch((error) => {
             res.status(400).json({ error })
@@ -49,7 +49,7 @@ router.put('/:id', (req, res) => {
 router.post('/', (req, res) => {
     Post.create(req.body)
         .then((createdPost) => {
-            res.redirect(`/posts/${createdPost._id}`)
+            res.redirect(`/${createdPost._id}`)
         })
         .catch((error) => {
             res.status(400).json({ error })

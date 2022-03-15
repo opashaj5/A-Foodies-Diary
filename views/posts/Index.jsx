@@ -8,7 +8,7 @@ class Index extends React.Component {
             <DefaultLayout>
                 <h1 class="header text-center">Welcome!</h1><br></br>
                 <div className="anchor-wrapper">
-                    <a href="/posts/new"><button id="create-btn">Create A New Post</button></a>
+                    <a href="/new"><button id="create-btn">Create A New Post</button></a>
                 </div>
                 <div className="container">
                     <div className="card-wrapper">
@@ -19,7 +19,7 @@ class Index extends React.Component {
                                     <div className="card-body">
                                         <h5 className="card-title">{post.title}</h5>
                                         <p className="card-text">{post.entry}</p>
-                                        <a href={`/posts/${post._id}`} className="btn btn-info">View Full Recipe</a>
+                                        <a href={`/${post._id}`} className="btn btn-info">View Full Recipe</a>
                                     </div>
                                 </div>
                             ))

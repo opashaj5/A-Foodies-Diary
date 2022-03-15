@@ -7,13 +7,13 @@ class New extends React.Component {
             <DefaultLayout>
                 <div className="new-post">
                     <h2>Create a New Post</h2>
-                    <form action="/posts" method="POST">
+                    <form action="/" method="POST">
                         Recipe Name: <input className="input-style" name="title" type="text" /><br />
                         Image URL: <input className="input-style" name="img" type="url" /><br />
                         Entry: <textarea className="entry-style" name="entry" /><br />
                         <input id="btn" type="submit" value="Submit" />
                     </form>
-                    <a href="/posts"><button>Back To Main Page</button></a>
+                    <a href="/users/home"><button>Back To Main Page</button></a>
                 </div>
             </DefaultLayout>
         )

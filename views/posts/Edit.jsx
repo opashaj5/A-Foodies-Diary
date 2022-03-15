@@ -9,16 +9,16 @@ class Edit extends React.Component {
                 <div className="edit-post">
                     <h2>Edit Recipe:</h2>
                     <div>
-                        <form action={`/posts/${post._id}?_method=PUT`} method="POST">
+                        <form action={`/${post._id}?_method=PUT`} method="POST">
                             Recipe Name: <input className="input-style" defaultValue={post.title} name="title" type="text" /><br />
                             Image URL: <input className="input-style" defaultValue={post.img} name="img" type="url" /><br />
                             Entry: <textarea className="entry-style" defaultValue={post.entry} name="entry" /><br />
                             <input id="btn" type="submit" value="Submit" />
                         </form>
-                        <form action={`/posts/${post._id}?_method=DELETE`} method="POST">
+                        <form action={`/${post._id}?_method=DELETE`} method="POST">
                             <input id="btn" type="submit" value="Delete" />
                         </form>
-                        <a href="/posts"><button>Back To Main Page</button></a>
+                        <a href="/users/home"><button>Back To Main Page</button></a>
                     </div>
                 </div>
             </DefaultLayout>

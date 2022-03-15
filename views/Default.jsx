@@ -43,10 +43,10 @@ class DefaultLayout extends React.Component {
                 <body>
                     <nav>
                         <ul class="nav nav-pills nav-justified" role="tablist">
-                            <li class="nav-item"><a class="nav-link" href="/posts">HOME</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/about">ABOUT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/contact">CONTACT</a></li>
-                            <li class="nav-item"><a class="nav-link" href="/login">LOGIN</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/users/home">HOME</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/users/about">ABOUT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/users/contact">CONTACT</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/users/login">LOGIN</a></li>
                         </ul>
                     </nav>
                     <header class="header text-center">

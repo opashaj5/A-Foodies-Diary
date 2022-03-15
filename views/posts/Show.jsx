@@ -17,8 +17,8 @@ class Show extends React.Component {
               </div>
             </div>
           </article><br></br>
-          <a href={`/posts/${post._id}/edit`}><button id="btn">Edit Post</button></a><br></br>
-          <a href="/posts"><button>Back To Main Page</button></a>
+          <a href={`/${post._id}/edit`}><button id="btn">Edit Post</button></a><br></br>
+          <a href="/users/home"><button>Back To Main Page</button></a>
         </div>
       </DefaultLayout>
     )

@@ -19,11 +19,8 @@ app.use(methodOverride("_method"));
 app.use(express.static("public"));
 
 // Routes
-app.use('/posts', postController)
+app.use('/', postController)
 app.use('/users', userController)
-app.get('/', (req, res) => {
-    res.send("Server is running");
-})
 
 // Server Listener
 const PORT = process.env.PORT;

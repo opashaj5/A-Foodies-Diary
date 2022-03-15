@@ -1,11 +1,12 @@
 const express = require('express');
+const Post = require('../models/post');
 const User = require("../models/user");
 
 // Create Router
 const router = express.Router();
 
 // Index
-router.get('/', (req, res) => {
+router.get('/home', (req, res) => {
     Post.find({})
         .then((posts) => {
             res.render("posts/Index", { posts })
