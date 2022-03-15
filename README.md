@@ -29,5 +29,4 @@ I would like to add the login, likes/comments features that I did not get to dur
 
 ## Wireframe
 
-<img src="https://i.imgur.com/8PPkS5X.png">
-<img src="https://i.imgur.com/7mB9yGn.png">
+<img src="https://i.imgur.com/8PPkS5X.png"> <img src="https://i.imgur.com/7mB9yGn.png">
