@@ -1,5 +1,5 @@
 # Peas in a Pod
-## CRUD Application
+### CRUD Application
 ---
 ## Introduction:
 
@@ -15,13 +15,17 @@ Peas in a Pod is a recipe blog that utilizes the 7 RESTful routes.
 
 Node.js | Express | React | MongoDB | Mongoose | JavaScript | CSS | HTML
 
-## Link to Heroku
+## ERD
 
+<img src="https://i.imgur.com/xCwZhgn.png">
 
+## Link to Heroku and Trello
+
+https://trello.com/b/jraGHIh7/peas-in-a-pod
 
 ## Next Steps
 
-I would like to add the login feature that I did not get to during my time on this project.
+I would like to add the login, likes/comments features that I did not get to during my time on this project. 
 
 ## Wireframe
 
